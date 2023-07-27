@@ -1,0 +1,45 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="card mx-auto d-block">
+                <div class="card-body">
+                  <p>{{isLoginError}}</p>
+                 <div *ngIf="!showLogIn">
+                  <form #SellerSignUp="ngForm" (ngSubmit)="SignUp(SellerSignUp.value)">
+                    <div class="form-group">
+                        <label for="name">Full Name:</label>
+                        <input type="text" class="form-control" id="Fname" name="Fname" ngModel>
+                      </div>
+                    <div class="form-group">
+                      <label for="email">Email address:</label>
+                      <input type="email" class="form-control" id="email" name="Email" ngModel>
+                    </div>
+                    <div class="form-group">
+                      <label for="pwd">Password:</label>
+                      <input type="password" class="form-control" id="pwd" name="Password" ngModel>
+                    </div>
+                    <button type="submit" class="btn btn-primary mx-auto d-block">Submit</button>
+                    <p>You have any accouent : <a (click)="isLogIn()">Click Here</a></p>
+                  </form>
+                 </div>
+                 <!-- LogIn -->
+                 <div *ngIf="showLogIn">
+                  <form #SellerLogIn="ngForm" (ngSubmit)="LogIn(SellerLogIn.value)">
+                    <div class="form-group">
+                      <label for="email">Email address:</label>
+                      <input type="email" class="form-control" id="email" name="Email" ngModel>
+                    </div>
+                    <div class="form-group">
+                      <label for="pwd">Password:</label>
+                      <input type="password" class="form-control" id="pwd" name="Password" ngModel>
+                    </div>
+                    <button type="submit" class="btn btn-primary mx-auto d-block">Login</button>
+                    <p>You don't have any accouent : <a (click)="isSignIn()">Click Here</a></p>
+                  </form>
+                 </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

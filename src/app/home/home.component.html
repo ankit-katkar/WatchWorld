@@ -1,0 +1,49 @@
+<div class="container-fluid">
+   <div class="row">
+    <div class="col-lg-12">
+        <ngb-carousel>
+            <ng-template ngbSlide>
+              <div class="picsum-img-wrapper">
+                <img src="../../assets/Slider Image Two.jpg" alt="Random first slide" />
+              </div>
+            </ng-template>
+            <ng-template ngbSlide>
+              <div class="picsum-img-wrapper">
+                <img src="../../assets/Slider Image One.jpg" alt="Random second slide" />
+              </div>
+            </ng-template>
+            <ng-template ngbSlide>
+              <div class="picsum-img-wrapper">
+                <img src="../../assets/Slider Image Three.jpg" alt="Random third slide" />
+              </div>
+            </ng-template>
+          </ngb-carousel>
+    </div>
+   </div>
+    <div class="padding">
+        <div class="row">
+            <div class="col-lg-3" *ngFor="let item of trandeyProducts">
+                <div>
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="productImage">
+                                <img class="mx-auto d-block" src="{{item.image}}" alt="">
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="productName">{{item.name}}</div>
+                            <div class="productPrice">{{item.price}}</div> 
+                        </div>
+                        <div class="card-footer">
+                            <div class="productFooter">
+                                <a routerLink="/detailProduct/{{item.id}}">View Product</a>
+                                <a>Add to Cart</a>
+                            </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

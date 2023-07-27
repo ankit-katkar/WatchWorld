@@ -1,0 +1,52 @@
+<div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <nav class="navebar">
+          <h2>WatchWorld</h2> 
+          <div *ngIf="menuType !== 'seller'" class="nav-scarch">
+            <div class="input-group">
+              <div class="form-outline">
+                <input 
+                #scarchInput
+                (keyup)="searchProduct($event)"
+                (blur)="hideScarch()"
+                  type="search"
+                  id="form1"
+                  placeholder="Search Here..."
+                  aria-label="Search"
+                />
+              </div>
+              <button (click)="ScarchProduct(scarchInput.value)">Scarch</button>
+            </div>
+              <ul class="scarch-result" *ngIf="scarchResult">
+                <li *ngFor="let result of scarchResult">
+                  <a>{{result.name}}</a>
+                </li>
+              </ul>             
+          </div>
+          <div [ngSwitch]="menuType">
+              <ul *ngSwitchCase="'default'">
+                <li><a routerLink="seller-auth">Seller</a></li>
+                <li><a routerLink="/">Home</a></li>
+                <li><a routerLink="/user-auth">LogIn</a></li>
+                <li><a [routerLink]="cardCountItem>0?'cart':null">Cart({{cardCountItem}})</a></li>
+              </ul>
+              <ul *ngSwitchCase="'user'">
+                <li><a routerLink="seller-auth">Seller</a></li>
+                <li><a routerLink="/">Home</a></li>
+                <li><a >{{userName}}</a></li>
+                <!-- <li><a routerLink="myorders">My Order</a></li> -->
+                <li><a (click)="userLogout()">Logout</a></li>
+                <li><a [routerLink]="cardCountItem>0?'cart':null">Cart({{cardCountItem}})</a></li>
+              </ul>
+              <ul *ngSwitchCase="'seller'">
+                <li><a routerLink="selleraddproduct">Add Product</a></li>
+                <li><a routerLink="productList">Product List</a></li>
+                <li><a (click)="Logout()">Logout</a></li>
+                <li><a href="">{{sellerName}}</a></li>
+              </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>

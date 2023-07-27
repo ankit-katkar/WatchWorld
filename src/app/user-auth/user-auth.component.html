@@ -1,0 +1,48 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="card mx-auto d-block">
+                <div class="card-body">
+                  <p>{{isLoginError}}</p>
+                 <div *ngIf="!showLogIn">
+                  <form #userSignUp="ngForm" (ngSubmit)="SignUp(userSignUp.value)">
+                    <div class="form-group">
+                        <label for="name">Full Name:</label>
+                        <input type="text" class="form-control" id="Fname" name="Fname" ngModel>
+                      </div>
+                    <div class="form-group">
+                      <label for="email">Email address:</label>
+                      <input type="email" class="form-control" id="email" name="Email" ngModel>
+                    </div>
+                    <div class="form-group">
+                      <label for="pwd">Password:</label>
+                      <input type="password" class="form-control" id="pwd" name="Password" ngModel>
+                    </div>
+                    <button type="submit" class="btn btn-primary mx-auto d-block">Submit</button>
+                    <p>You have any accouent : <a (click)="isLogIn()">Click Here</a></p>
+                  </form>
+                 </div>
+                 <!-- LogIn -->
+                 <div *ngIf="showLogIn">
+                  <form #userLogIn="ngForm" (ngSubmit)="LogIn(userLogIn.value)">
+                    <p class="error-user">{{userAuthError}}</p>
+                    <div class="form-group">
+                      <label for="email">Email address:</label>
+                      <input type="email" class="form-control" id="email" name="Email" ngModel #Email="ngModel" required>
+                      <p class="InputError"><span *ngIf="Email.invalid && Email.touched">Please Enter Valid Value</span></p>
+                    </div>
+                    <div class="form-group">
+                      <label for="pwd">Password:</label>
+                      <input type="password" class="form-control" id="pwd" name="Password" ngModel #Password="ngModel" required>
+                      <p class="InputError"><span *ngIf="Password.invalid && Password.touched">Please Enter Valid Value</span></p>
+                    </div>
+                    <button type="submit" [disabled]="userLogIn.invalid" class="btn btn-primary mx-auto d-block">Login</button>
+                    <p>You don't have any accouent : <a (click)="isSignIn()">Click Here</a></p>
+                  </form>
+                 </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

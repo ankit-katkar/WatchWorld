@@ -1,0 +1,67 @@
+{
+  "seller": [
+    {
+      "Fname": "demo",
+      "Email": "demo@gmail.com",
+      "Password": "demo123",
+      "id": 1
+    }
+  ],
+  "Products": [
+    {
+      "name": "ROLEX",
+      "price": 90000,
+      "color": "Goldan Gray",
+      "category": " Analog",
+      "description": "This is a Rolex watch",
+      "image": "https://imagedelivery.net/lyg2LuGO05OELPt1DKJTnw/1f0f1562-232f-40e7-7535-2472197f6e00/public",
+      "id": 1
+    },
+    {
+      "name": "Fastrack  ",
+      "price": 1299,
+      "color": "black",
+      "category": " Analog",
+      "description": "This is a fastrack analog watch",
+      "image": "https://static.vecteezy.com/system/resources/previews/004/441/609/original/realistic-clock-watch-grey-stainless-steel-black-gold-face-luxury-for-men-on-white-background-vector.jpg",
+      "id": 2
+    },
+    {
+      "name": "Casio ",
+      "price": 1999,
+      "color": "Gray",
+      "category": " Analog",
+      "description": "This is a Casio Watch",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRpYRPW2-jzlWB9AmtYyfrsxPEHhQfSev4Yg&usqp=CAU",
+      "id": 3
+    },
+    {
+      "name": "Casio",
+      "price": 999,
+      "color": "Gray",
+      "category": " Analog",
+      "description": "This is a Casio Watch",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT04eXUlGhU055vsH0sZj9LOQM9QAETixRCvw&usqp=CAU",
+      "id": 4
+    }
+  ],
+  "User": [
+    {
+      "Fname": "test",
+      "Email": "test@gmail.com",
+      "Password": "test123",
+      "id": 1
+    }
+  ],
+  "Cart": [],
+  "MyOrders": [
+    {
+      "email": "",
+      "number": "",
+      "address": "",
+      "totalPrice": 650,
+      "userId": 1,
+      "id": 2
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="row Order-List">
+                <div class="col-lg-2"><span>Order</span></div>
+                <div class="col-lg-2"><span>OrderId</span></div>
+                <div class="col-lg-2"><span>Price</span></div>
+                <div class="col-lg-2"><span>Status</span></div>
+                <div class="col-lg-2"><span>Action</span></div>
+            </div>
+            <div class="row">
+                <div class="row Order-Detail" *ngFor="let orders of orderData">
+                    <div class="col-lg-2"><img src="" alt=""></div>
+                    <div class="col-lg-2">{{orders.id}}</div>
+                    <div class="col-lg-2">{{orders.totalPrice}}</div>
+                    <div class="col-lg-2">in process</div>
+                    <div class="col-lg-2"><span><button class="btn" (click)="CancelOrder(orders.id)">
+                        Cancle Order
+                    </button></span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

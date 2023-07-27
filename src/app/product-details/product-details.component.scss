@@ -1,0 +1,43 @@
+.container{
+    padding: 70px 150px 70px 150px;
+}
+img{
+    width: 80%;
+}
+.product-head{
+    border-bottom: 1px solid rgb(218, 218, 218);
+}
+.product-head h3{
+color: gray;
+font-size: 26px;
+}
+.product-head p{
+    font-size: 22px;
+    font-weight: 500;
+}
+.info{
+    border-bottom: 1px solid rgb(218, 218, 218);
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.info p{
+    font-size: 17px;
+}
+.product-color{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+.description{
+    font-size: 16px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.btn{
+    width: 50%;
+    background-color: blue;
+    color: white;
+    border-radius: 0px;
+    border: 2px solid white;
+}

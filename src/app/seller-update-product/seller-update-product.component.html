@@ -1,0 +1,80 @@
+<div>
+    <div>
+      <div class="card mx-auto d-block">
+        <div class="card-body">
+          <h1 class="HeadText">Add Product</h1>
+          <p class="productMessage">{{ updateProductMessage }}</p>
+          <form
+            #SellerAddProduct="ngForm"
+            (ngSubmit)="UpdateProduct(SellerAddProduct.value)"
+          >
+            <div class="form-group">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Enter Product Name"
+                id="name"
+                name="name"
+                ngModel="{{productData?.name}}"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="number"
+                class="form-control"
+                placeholder="Enter Product price"
+                id="price"
+                name="price"
+                ngModel="{{productData?.price}}"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Enter Product Color"
+                id="color"
+                name="color"
+                ngModel="{{productData?.color}}"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Enter Product Category"
+                id="category"
+                name="category"
+                ngModel="{{productData?.category}}"
+              />
+            </div>
+            <div class="form-group">
+              <textarea
+                type="text"
+                class="form-control"
+                placeholder="Enter Product Description"
+                rows="3"
+                id="description"
+                name="description"
+                ngModel="{{productData?.description}}"
+              ></textarea>
+            </div>
+            <div class="form-group">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Enter Product Image"
+                id="image"
+                name="image"
+                ngModel="{{productData?.image}}"
+              />
+            </div>
+            <button type="submit" class="btn btn-primary mx-auto d-block">
+              Add Product
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  
