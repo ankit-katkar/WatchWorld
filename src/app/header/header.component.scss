@@ -3,6 +3,10 @@
     justify-content: space-between;
     padding-top: 20px;
     padding-bottom: 20px;
+    align-items: center;
+}
+.navebar h2{
+    cursor: pointer;
 }
 .navebar ul{
     display: inline-flex;
@@ -12,11 +16,14 @@
 }
 .navebar li{
     padding-left: 20px;
+
 }
 .navebar li a{
     text-decoration: none;
     font-size: 18px;
     color: black;
+    cursor: pointer;
+    
 }
 .nav-scarch input{
     flex: 1;
@@ -24,13 +31,20 @@
     height: 40px;
     border: 1px solid rgb(202, 202, 202);
     border-right: 0px;
-    border-radius: 50px 0px 0px 50px;
+    border-radius: 2px 0px 0px 2px;
+}
+::placeholder{
+    padding-left: 10px;
 }
 .nav-scarch button{
     height: 40px;
+    width: 40px;
     border: 1px solid rgb(202, 202, 202);
     border-left: 0px;
-    border-radius: 0px 50px 50px 0px;
+    border-radius: 0px 2px 2px 0px;
+    color: #2874f0;
+    background-color: white;
+    align-items: center;
 }
 .scarch-result{
     position: absolute;
@@ -44,7 +58,21 @@
 .scarch-result li{
     padding: 10px;
     border: 1px solid rgb(243, 242, 242);
+    align-items: center;
+}
+.seller{
+    height: 40px;
+    width: 100px;
+    background-color: #2874f0;
+    color: white;
 }
 .scarch-result li a{
     cursor: pointer;
+}
+.sub-menu li a{
+    font-size: 16px;   
+}
+.sub-menu li{
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0px 10px 20px;
 }

@@ -19,7 +19,7 @@
                       <input type="password" class="form-control" id="pwd" name="Password" ngModel>
                     </div>
                     <button type="submit" class="btn btn-primary mx-auto d-block">Submit</button>
-                    <p>You have any accouent : <a (click)="isLogIn()">Click Here</a></p>
+                    <p class="Link">You have any accouent : <a (click)="isLogIn()">Click Here</a></p>
                   </form>
                  </div>
                  <!-- LogIn -->
@@ -37,7 +37,7 @@
                       <p class="InputError"><span *ngIf="Password.invalid && Password.touched">Please Enter Valid Value</span></p>
                     </div>
                     <button type="submit" [disabled]="userLogIn.invalid" class="btn btn-primary mx-auto d-block">Login</button>
-                    <p>You don't have any accouent : <a (click)="isSignIn()">Click Here</a></p>
+                    <p class="Link">You don't have any accouent : <a (click)="isSignIn()">Click Here</a></p>
                   </form>
                  </div>
                 </div>

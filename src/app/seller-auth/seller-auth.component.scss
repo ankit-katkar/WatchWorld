@@ -1,11 +1,25 @@
 
 .card{
     width: 400px;
-    margin-top: 100px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.form-group{
+    padding-bottom: 20px;
 }
 .card-body{
     padding: 30px 50px 30px 50px;
 }
 .btn{
-    margin-top: 40px;
+    margin-top: 40px; 
+    width: 150px;
+}
+.Link{
+    font-size: 14px;
+    color: gray;
+    margin-top: 10px;
+    text-align: center;
+}
+.Link a{
+    font-weight: 600;
 }

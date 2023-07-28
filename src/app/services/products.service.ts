@@ -26,7 +26,7 @@ export class ProductsService {
     return this.http.put(`http://localhost:3000/Products/${Products.id}`,Products)
   }
   trandeyProduct(){
-    return this.http.get<Products[]>(`http://localhost:3000/Products?_limit=8`)
+    return this.http.get<Products[]>(`http://localhost:3000/Products?_limit=20`)
   }
   scarchProduct(query:string){
     return this.http.get<Products[]>(`http://localhost:3000/Products?q=${query}`)

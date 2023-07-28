@@ -21,7 +21,7 @@
     </div>
    </div>
     <div class="padding">
-        <div class="row">
+        <div class="row"> 
             <div class="col-lg-3" *ngFor="let item of trandeyProducts">
                 <div>
                     <div class="card">
@@ -32,12 +32,11 @@
                         </div>
                         <div class="card-body">
                             <div class="productName">{{item.name}}</div>
-                            <div class="productPrice">{{item.price}}</div> 
+                            <div class="productPrice"><i class="bi bi-currency-rupee"></i>{{item.price}}</div> 
                         </div>
                         <div class="card-footer">
                             <div class="productFooter">
                                 <a routerLink="/detailProduct/{{item.id}}">View Product</a>
-                                <a>Add to Cart</a>
                             </div>
                         </div>
                       </div>
