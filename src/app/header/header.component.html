@@ -27,7 +27,7 @@
           <ul *ngSwitchCase="'user'">
             <li><a routerLink="seller-auth">Become a Seller</a></li>
             <li><a routerLink="/">Home</a></li>
-            <li ngbDropdown class="d-inline-block"><a id="dropdownBasic1" ngbDropdownToggle>{{userName}}</a>
+            <li ngbDropdown class="d-inline-block"><a id="dropdownBasic1" ngbDropdownToggle>{{userName | titlecase}}</a>
               <div ngbDropdownMenu aria-labelledby="dropdownBasic1" class="sub-menu">
             <li><a class="my-order"  routerLink="myorders">My Order</a></li>
             <li><a (click)="userLogout()">Logout</a></li>
@@ -39,7 +39,7 @@
           <li><a routerLink="/selleraddproduct">Add Product</a></li>
           <li><a routerLink="/seller-home">Product List</a></li>
           <li><a (click)="Logout()">Logout</a></li>
-          <li><a>{{sellerName}}</a></li>
+          <li><a>{{sellerName | titlecase}}</a></li>
         </ul>
     </div>
     </nav>

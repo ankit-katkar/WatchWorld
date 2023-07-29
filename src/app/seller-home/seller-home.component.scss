@@ -1,6 +1,9 @@
 table{
     text-align: left;
 }
+.Title{
+    text-align: center;
+}
 img{
     width: 100px;
     height: 100px;
@@ -8,4 +11,13 @@ img{
 .productDeleteMessage{
     color: red;
     font-size: 16px;
+}
+.EditList{
+    font-size: 20px;
+    margin-left: 10px;
+}
+.DeleteList{
+    color: red;
+    font-size: 20px;
+    margin-left: 20px;
 }

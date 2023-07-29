@@ -8,7 +8,7 @@
             <div class="porduct-detail">
                 <div class="product-head">
                     <h3 class="name">{{productData.name}}</h3>
-                    <p class="price">{{productData.price}}</p>
+                   <div class="price"><i class="bi bi-currency-rupee"></i>{{productData.price}}</div> 
                   </div>
                    <div class="info">
                     <p>Color:-{{productData.color}}</p>
@@ -23,7 +23,6 @@
                         <p>{{productData.description}}</p>
                     </div>
                     <div>
-                        <button class="btn Footer-btn">Buy Now</button>
                         <button *ngIf="!removeCart" class="btn Footer-btn" (click)="AddToCart()">Add to Cart</button>
                         <button *ngIf="removeCart" class=" btn Footer-btn" (click)="removeToCart(productData.id)">Remove To Cart</button>
                     </div>

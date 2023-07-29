@@ -1,40 +1,40 @@
 <div class="container">
-    <div class="row">
-        <div class="col-lg-12">
-            <div>
-                <div>
-                    <h2>Product List</h2>
-                    <p class="productDeleteMessage">{{ProductDeleteMessage}}</p>
-                    <table class="table table-bordered">
-                       <thead>
-                        <tr>
-                            <th>Image</th>
-                            <th>Name</th>
-                            <th>Price</th>
-                            <th>Color</th>
-                            <th>Category</th>
-                            <th>Description</th>
-                            <th>Action</th>
-                           </tr>
-                       </thead>
-                       <tbody>
-                        <tr *ngFor="let list of productList">
-                            <td><img src="{{list.image}}" alt=""></td>
-                            <td>{{list.name}}</td>
-                            <td>{{list.price}}</td>
-                            <td>{{list.color}}</td>
-                            <td>{{list.category}}</td>
-                            <td>{{list.description}}</td>
-                            <td>
-                                <button routerLink="/sellerUdpadeProduct/{{list.id}}">Edit</button>
-                                <button (click)="deleteProduct(list.id)">Delete</button>
-                            </td>
-                           </tr>
-                       </tbody>
-                    </table>
-                </div>
-            </div>
+  <div class="row">
+    <div class="col-lg-12">
+      <div>
+        <div>
+          <h2 class="Title">Product List</h2>
+          <p class="productDeleteMessage">{{ProductDeleteMessage}}</p>
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th>Image</th>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Color</th>
+                <th>Category</th>
+                <th>Description</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let list of productList">
+                <td><img src="{{list.image}}" alt=""></td>
+                <td>{{list.name}}</td>
+                <td>{{list.price}}</td>
+                <td>{{list.color}}</td>
+                <td>{{list.category}}</td>
+                <td>{{list.description}}</td>
+                <td>
+                  <a class="EditList" routerLink="/sellerUdpadeProduct/{{list.id}}"><i
+                      class="bi bi-pencil-square"></i></a>
+                  <a class="DeleteList" (click)="deleteProduct(list.id)"><i class="bi bi-trash3-fill"></i></a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
         </div>
+      </div>
     </div>
+  </div>
 </div>
- 

@@ -8,17 +8,20 @@
                   <form #SellerSignUp="ngForm" (ngSubmit)="SignUp(SellerSignUp.value)">
                     <div class="form-group">
                         <label for="name">Full Name:</label>
-                        <input type="text" class="form-control" id="Fname" name="Fname" ngModel>
+                        <input type="text" class="form-control" id="Fname" name="Fname" ngModel #Fname="ngModel" required>
+                        <p class="InputError"><span *ngIf="Fname.invalid && Fname.touched">Please Enter Product Color</span></p>
                       </div>
                     <div class="form-group">
                       <label for="email">Email address:</label>
-                      <input type="email" class="form-control" id="email" name="Email" ngModel>
+                      <input type="email" class="form-control" id="email" name="Email" ngModel #Email="ngModel" required>
+                      <p class="InputError"><span *ngIf="Email.invalid && Email.touched">Please Enter Product Color</span></p>
                     </div>
                     <div class="form-group">
                       <label for="pwd">Password:</label> 
-                      <input type="password" class="form-control" id="pwd" name="Password" ngModel>
+                      <input type="password" class="form-control" id="pwd" name="Password" ngModel #Password="ngModel" required>
+                      <p class="InputError"><span *ngIf="Password.invalid && Password.touched">Please Enter Product Color</span></p>
                     </div>
-                    <button type="submit" class="btn btn-primary mx-auto d-block">Sign Up</button>
+                    <button type="submit"  [disabled]="SellerSignUp.invalid" class="btn btn-primary mx-auto d-block">Sign Up</button>
                     <p class="Link">You have any accouent : <a (click)="isLogIn()">Click Here</a></p>
                   </form>
                  </div>
@@ -27,13 +30,15 @@
                   <form #SellerLogIn="ngForm" (ngSubmit)="LogIn(SellerLogIn.value)">
                     <div class="form-group">
                       <label for="email">Email address:</label>
-                      <input type="email" class="form-control" id="email" name="Email" ngModel>
+                      <input type="email" class="form-control" id="email" name="Email" ngModel #Email="ngModel" required>
+                      <p class="InputError"><span *ngIf="Email.invalid && Email.touched">Please Enter Product Color</span></p>
                     </div>
                     <div class="form-group">
                       <label for="pwd">Password:</label>
-                      <input type="password" class="form-control" id="pwd" name="Password" ngModel>
+                      <input type="password" class="form-control" id="pwd" name="Password" ngModel #Password="ngModel" required>
+                      <p class="InputError"><span *ngIf="Password.invalid && Password.touched">Please Enter Product Color</span></p>
                     </div>
-                    <button type="submit" class="btn btn-primary mx-auto d-block">Login</button>
+                    <button type="submit"  [disabled]="SellerLogIn.invalid" class="btn btn-primary mx-auto d-block">Login</button>
                     <p class="Link">You don't have any accouent : <a (click)="isSignIn()">Click Here</a></p>
                   </form>
                  </div>
