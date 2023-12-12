@@ -1,26 +1,98 @@
-.container-fluid{
-    background-color: rgb(245, 245, 245);
-    height: 340px;
-    bottom: 0;
-    right: 0;
-    left: 0;
+.container-fluid {
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: #000;
+  margin-top: 5%;
 }
-.padding{
-    padding: 50px 0px 50px 150px;
+
+.padding {
+  padding: 5% 8% 5% 14%;
 }
-.Footer-Info{
-cursor: pointer;
+
+.Footer-Info {
+  cursor: pointer;
 }
-.Footer-Info p{
-    font-size: 17px;
-    font-weight: 600;
+
+.Footer-Info h3 {
+  font-weight: bold;
+  font-size: 36px;
+  color: #fff;
 }
-.Footer-Info a{
-    font-size: 15px;
-    line-height: 35px;
-    color: black;
-    text-decoration: none;
+
+.Footer-Info p {
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
 }
-.Copyright{
+
+.Footer-Info a {
+  font-size: 14px;
+  line-height: 35px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.hr {
+  color: #fff;
+}
+
+.Copyright {
+  padding: 1% 8% 1% 14%;
+  font-size: 0.9vw;
+  color: #fff;
+}
+
+@media only screen and (max-width: 800px) {
+  .padding {
+    padding: 5% 5% 5% 5%;
+  }
+
+  .Footer-Info{
     text-align: center;
+  }
+  .Footer-Info p {
+    font-size: 3.2vw;
+    margin-top: 15%;
+  }
+  
+  .Footer-Info a {
+    font-size: 2vw;
+  }
+
+  .Copyright {
+   text-align: center;
+   padding: 0%;
+    font-size: 2vw;
+  }
 }
+
+@media only screen and (max-width: 500px) {
+    .padding {
+      padding: 5% 2% 5% 2%;
+    }
+  
+    .Footer-Info{
+      text-align: center;
+    }
+
+    .Footer-Info h3 {
+        font-size: 10vw;
+      }
+
+    .Footer-Info p {
+      font-size: 6vw;
+      margin-top: 15%;
+    }
+    
+    .Footer-Info a {
+      font-size: 4vw;
+    }
+  
+    .Copyright {
+     text-align: center;
+     padding: 0%;
+      font-size: 3.5vw;
+    }
+  }
+  

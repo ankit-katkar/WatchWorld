@@ -19,6 +19,10 @@ import { CheckoutPageComponent } from './checkout-page/checkout-page.component';
 import { MyOrdersComponent } from './my-orders/my-orders.component';
 import { FormsModule } from '@angular/forms';
 import { FooterComponent } from './footer/footer.component';
+import { LuxuryWatchesComponent } from './luxury-watches/luxury-watches.component';
+import { CausalWatchesComponent } from './causal-watches/causal-watches.component';
+import { SmartWatchesComponent } from './smart-watches/smart-watches.component';
+import { DigitalWatchesComponent } from './digital-watches/digital-watches.component';
 
 @NgModule({
   declarations: [
@@ -36,6 +40,10 @@ import { FooterComponent } from './footer/footer.component';
     CheckoutPageComponent,
     MyOrdersComponent,
     FooterComponent,
+    LuxuryWatchesComponent,
+    CausalWatchesComponent,
+    SmartWatchesComponent,
+    DigitalWatchesComponent,
 
   ],
   imports: [

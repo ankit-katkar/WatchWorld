@@ -1,97 +1,100 @@
-<div>
+<div class="container-fluid">
   <div>
-    <div class="card mx-auto d-block">
-      <div class="card-body">
-        <h1 class="HeadText">Add Product</h1>
-        <p class="productMessage">{{ addProductMessage }}</p>
-        <form
-          #SellerAddProduct="ngForm"
-          (ngSubmit)="AddProduct(SellerAddProduct.value)"
-        >
-          <div class="form-group">
-            <input
-              type="text"
-              class="form-control"
-              placeholder="Enter Product Name"
-              id="name"
-              name="name"
-              ngModel
-              #name="ngModel"
-              required
-            /> 
-            <p class="InputError"><span *ngIf="name.invalid && name.touched">Please Enter Product Name</span></p>
-          </div>
-          <div class="form-group">
-            <input
-              type="number"
-              class="form-control"
-              placeholder="Enter Product price"
-              id="price"
-              name="price"
-              ngModel
-              #price="ngModel"
-              required
-            />
-            <p class="InputError"><span *ngIf="price.invalid && price.touched">Please Enter Product Price</span></p>
-          </div>
-          <div class="form-group">
-            <input
-              type="text"
-              class="form-control"
-              placeholder="Enter Product Color"
-              id="color"
-              name="color"
-              ngModel
-              #color="ngModel"
-              required
-            />
-            <p class="InputError"><span *ngIf="color.invalid && color.touched">Please Enter Product Color</span></p>
-          </div>
-          <div class="form-group">
-            <input
-              type="text"
-              class="form-control"
-              placeholder="Enter Product Category"
-              id="category"
-              name="category"
-              ngModel
-              #category="ngModel"
-              required
-            />
-            <p class="InputError"><span *ngIf="category.invalid && category.touched">Please Enter Product Category</span></p>
-          </div>
-          <div class="form-group">
-            <textarea
-              type="text"
-              class="form-control"
-              placeholder="Enter Product Description"
-              rows="3"
-              id="description"
-              name="description"
-              ngModel
-              #description="ngModel"
-              required
-            ></textarea>
-            <p class="InputError"><span *ngIf="description.invalid && description.touched">Please Enter Product description</span></p>
-          </div>
-          <div class="form-group">
-            <input
-              type="text"
-              class="form-control"
-              placeholder="Enter Product Image"
-              id="image"
-              name="image"
-              ngModel
-              #image="ngModel"
-              required
-            />
-            <p class="InputError"><span *ngIf="image.invalid && image.touched">Please Enter Product image</span></p>
-          </div>
-          <button type="submit" [disabled]="SellerAddProduct.invalid" class="btn btn-primary mx-auto d-block">
-            Add Product
-          </button>
-        </form>
+    <div>
+      <div class="card mx-auto d-block">
+        <div class="card-body">
+          <h1 class="HeadText">Add Product</h1>
+          <p class="productMessage">{{ addProductMessage }}</p>
+          <form
+            #SellerAddProduct="ngForm"
+            (ngSubmit)="AddProduct(SellerAddProduct.value)"
+          >
+            <div class="form-group">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Enter Product Name"
+                id="name"
+                name="name"
+                ngModel 
+                #name="ngModel"
+                required
+              /> 
+              <p class="InputError"><span *ngIf="name.invalid && name.touched">Please Enter Product Name</span></p>
+            </div>
+            <div class="form-group">
+              <input
+                type="number"
+                class="form-control"
+                placeholder="Enter Product price"
+                id="price"
+                name="price"
+                ngModel
+                #price="ngModel"
+                required
+              />
+              <p class="InputError"><span *ngIf="price.invalid && price.touched">Please Enter Product Price</span></p>
+            </div>
+            <div class="form-group">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Enter Product Color"
+                id="color"
+                name="color"
+                ngModel
+                #color="ngModel"
+                required
+              />
+              <p class="InputError"><span *ngIf="color.invalid && color.touched">Please Enter Product Color</span></p>
+            </div>
+            <div class="form-group">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Enter Product Category"
+                id="category"
+                name="category"
+                ngModel
+                #category="ngModel"
+                required
+              />
+              <p class="InputError"><span *ngIf="category.invalid && category.touched">Please Enter Product Category</span></p>
+            </div>
+            <div class="form-group">
+              <textarea
+                type="text"
+                class="form-control"
+                placeholder="Enter Product Description"
+                rows="3"
+                id="description"
+                name="description"
+                ngModel
+                #description="ngModel"
+                required
+              ></textarea>
+              <p class="InputError"><span *ngIf="description.invalid && description.touched">Please Enter Product description</span></p>
+            </div>
+            <div class="form-group">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Enter Product Image"
+                id="image"
+                name="image"
+                ngModel
+                #image="ngModel"
+                required
+              />
+              <p class="InputError"><span *ngIf="image.invalid && image.touched">Please Enter Product image</span></p>
+            </div>
+            <button type="submit" [disabled]="SellerAddProduct.invalid" class="btn mx-auto d-block">
+              Add Product
+            </button>
+          </form>
+        </div>
       </div>
     </div>
   </div>
+  
 </div>

@@ -1,46 +1,224 @@
-.container-fluid{
-    padding-left: 0rem;
-    padding-right: 0rem;
-    overflow: hidden;
-}
-.card{
-    margin-bottom: 40px;
-    padding: 0%;
-    width: 16rem;
-}
-.picsum-img-wrapper img{
-    width: 100%;
-    height: 100%;
-}
-.padding{
-    padding: 50px 100px 0px 100px;
+.container-fluid {
+  padding-left: 0rem;
+  padding-right: 0rem;
+  overflow: hidden;
 }
 
-.card-header{
-    background-color: white;
-    height: 250px;
+.padding {
+  padding: 4% 5% 0px 5%;
 }
-.productImage img{
-    width: 200px;
-    align-items: center;
-    padding: 10px;
+
+.ImageSlider-LView{
+  width: 100%;
+  height: 85vh;
 }
-.productName{
-    font-size: 18px;
-    color: gray;
-    font-weight: 600;
+
+.About-WatchWorld .row {
+  padding: 6% 5% 6px 5%;
+
 }
-.productPrice{
-    align-items: center;
+
+.PremiumInfo h3 {
+  font-size: 2.4vw;
+  font-weight: bold;
 }
-.card-footer{
-    background-color: white;
+
+.PremiumInfo p {
+  font-size: 1.2vw;
+  margin-top: 3%;
+  text-align: left;
 }
-.productFooter{
-    padding: 6px 0px 6px 0px;
+
+.Premium_Image {
+  float: right;
+  border-radius: 4%;
+}
+
+.wrapper {
+  margin: 4px, 4px;
+  display: flex;
+  padding: 4px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  justify-content: space-between;
+  padding: 8% 14% 5% 14%;
+}
+
+.wrapper::-webkit-scrollbar {
+  width: 0%;
+}
+
+.image-box {
+  justify-content: center;
+  text-align: center;
+}
+
+.image-box img {
+  border-radius: 50%;
+  width: 6vw;
+  height: 6vw;
+}
+
+.image-box h4 {
+  font-size: 1.1vw;
+  padding-top: 10%;
+}
+
+.picsum-img-wrapper img {
+  width: 100%;
+  height: 100%;
+}
+
+.card {
+  margin-bottom: 14%;
+  padding: 0%;
+  width: 20rem;
+  left: calc(50% - 10rem);
+  transition: .5s ease;
+}
+
+.card:hover{
+  transform: scale(1.05);
+}
+
+.card-header {
+  background-color: white;
+  height: 240px;
+}
+
+.productImage img {
+  width: 72%;
+  align-items: center;
+  padding: 10px;
+
+}
+
+.productName {
+  font-size: 20px;
+  color: #000;
+  font-weight: bold;
+  font-weight: 600;
+}
+
+.productPrice {
+  align-items: center;
+  margin-top: 8px;
+}
+
+.card-footer {
+  background-color: #000;
+}
+
+.productFooter {
+  padding: 6px 0px 6px 0px;
+  text-align: center;
+}
+
+.productFooter a {
+  color: black;
+  text-decoration: none;
+  color: #fff;
+}
+
+.premium-watches-banner img {
+  width: 100%;
+  padding: 0% 5% 0px 5%;
+
+}
+
+.premium-watches-banner .mobile-view{
+  display: none;
+}
+
+@media only screen and (max-width: 800px) {
+  .PremiumInfo h3 {
+    font-size: 2.5vw;
+  }
+
+  .PremiumInfo p {
+    font-size: 1.5vw;
+  }
+
+  .Premium_Image {
+    width: 100%;
+  }
+
+  .wrapper {
+    padding: 6% 5% 6% 5%;
+  }
+
+  .image-box {
+    padding: 0% 4.5%;
+    justify-content: center;
     text-align: center;
+  }
+
+  .image-box img {
+    border-radius: 50%;
+    width: 11vw;
+    height: 11vw;
+  }
+
+  .image-box h4 {
+    font-size: 2vw;
+  }
 }
-.productFooter a{
-    color: black;
-    text-decoration: none;
+
+@media only screen and (max-width: 500px) {
+
+  .ImageSlider-LView{
+ height: 30vh;
+  }
+
+  .carousel-indicators{
+    margin-left: calc(50% - 25px);
+    width: 50px;
+  }
+  .carousel-control-prev{
+    display: none;
+  }
+
+  .carousel-control-next{
+    display: none;
+  }
+  
+  .PremiumInfo h3 {
+    font-size: 7vw;
+  }
+
+  .PremiumInfo p {
+    font-size: 4vw;
+    text-align: justify;
+  }
+
+  .Premium_Image {
+    width: 100%;
+  }
+
+  .wrapper {
+    padding: 10% 5% 10% 0%;
+  }
+
+  .image-box img {
+    width: 18vw;
+    height: 18vw;
+  }
+
+  .image-box h4 {
+    font-size: 4vw;
+  }
+
+  .card {
+    width: 100%;
+    left: calc(50% - 50%);
+  }
+
+  .premium-watches-banner img{
+    display: none;
+  }
+
+  .premium-watches-banner .mobile-view{
+    display: block;
+  }
 }

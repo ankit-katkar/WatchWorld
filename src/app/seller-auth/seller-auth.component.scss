@@ -1,25 +1,47 @@
+.container-fluid {
+  background-image: url('../../assets/watches background.jpg');
+}
 
-.card{
-    width: 400px;
-    margin-top: 40px;
-    margin-bottom: 40px;
+.card {
+  width: 400px;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
-.form-group{
-    padding-bottom: 10px;
+
+.form-group {
+  padding-bottom: 10px;
 }
-.card-body{
-    padding: 30px 50px 30px 50px;
+
+.card-body {
+  padding: 30px 50px 30px 50px;
 }
+
+.btn {
+  margin-top: 40px;
+  width: 150px;
+}
+
+.Link {
+  font-size: 14px;
+  color: gray;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.Link a {
+  font-weight: 600;
+}
+
 .btn{
-    margin-top: 40px; 
-    width: 150px;
+    background-color: #000;
+    color: #fff;
 }
-.Link{
-    font-size: 14px;
-    color: gray;
-    margin-top: 10px;
-    text-align: center;
-}
-.Link a{
-    font-weight: 600;
+
+@media only screen and (max-width: 500px) {
+    .card{
+        width: 100%;
+    }
+    .card-body {
+        padding: 5% 8%;
+      }
 }

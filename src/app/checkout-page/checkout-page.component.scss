@@ -1,29 +1,81 @@
-.container{
-    padding: 20px 100px 0px 100px;
-}.Checkout{
-    text-align: center;
+.container {
+  padding: 20px 100px 0px 100px;
 }
-.Checkout-Detail{
-padding-top: 30px;
+
+.Checkout {
+  text-align: center;
+  font-size: 3vw;
+  font-weight: bold;
 }
-.form-group{
-    padding-bottom: 40px;
+
+.Checkout-Detail {
+  padding-top: 30px;
+  padding-bottom: 60px;
 }
-.card-body{
-    padding: 50px;
+
+.form-group {
+  padding-bottom: 40px;
 }
-.btn{
-    border-radius: 3px;
-    width: 200px;
+
+.card-body {
+  padding: 50px;
 }
-.Payment-Detail{
-   padding-left: 100px;
+
+.checkoutBtn {
+  border-radius: 3px;
+  width: 10vw;
+  background-color: #000;
+  color: #fff;
+  margin-left: calc(50% - 5vw);
 }
-.Payment-Detail p{
-    font-size: 18px;
+
+.Payment-Detail p {
+  font-size: 18px;
 }
-.message{
-    color: green;
-    font-size: 14px;
-    text-align: center;
+
+.message {
+  color: green;
+  font-size: 14px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 800px) {
+    .container {
+        padding: 8% 2%;
+      }
+
+      .Checkout {
+        font-size: 4.5vw;
+      }
+
+      .card-body {
+        padding: 8%;
+      }
+      .checkoutBtn {
+        width: 16vw;
+        margin-left: calc(50% - 8vw);
+      }
+}
+
+@media only screen and (max-width: 500px) {
+    .container {
+        padding: 8% 4%;
+      }
+
+      .Checkout {
+        font-size: 10vw;
+      }
+
+      ::placeholder{
+        font-size: 3.5vw;
+      }
+
+      .checkoutBtn {
+        width: 40vw;
+        margin-left: calc(50% - 20vw);
+      }
+
+      .Payment-Detail{
+        padding-top: 10%;
+      }
 }

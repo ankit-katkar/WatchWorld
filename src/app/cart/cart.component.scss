@@ -1,46 +1,96 @@
-img{
-    height: 100px;
-    width: 100px;
+.cart-page {
+  margin-top: 30px;
+  margin-bottom: 50px;
 }
-.Product-Details{
-    border: 1px solid #ddd;
-    padding: 15px;
-    border-radius: 5px;
+
+img {
+  height: 100px;
+  width: 100px;
 }
-ul{
-    margin: 0%;
-    padding: 0%;
-    display: flex;
-    list-style-type: none;
-    align-items: center;
-    justify-content: space-between;
-    border-bottom: 1px solid #ddd;
-    padding-bottom: 15px;
-    padding-top: 15px;
+
+.Product-Details {
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 5px;
+  margin-top: 20px;
 }
-.removeToCart{
-    background-color: blue;
-    color: white;
+
+ul {
+  margin: 0%;
+  padding: 0%;
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 15px;
+  padding-top: 15px;
 }
-.Summary{
+
+.removeToCart {
+  background-color: #000;
+  color: white;
+}
+
+.Summary {
+  text-align: center;
+}
+
+.Price-Detail {
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 5px;
+  margin-top: 5%;
+}
+
+.Price-Detail p {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Price-Detail h5 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.checkout {
+  width: 100%;
+  background-color: #000;
+  color: white;
+  border-radius: 2px;
+  margin-top: 30px;
+}
+
+
+@media only screen and (max-width:800px) {
+  .Summary {
+    margin-top: 5%;
+  }
+}
+
+@media only screen and (max-width:500px) {
+  .myCart {
     text-align: center;
-}
-.Price-Detail{
-    border: 1px solid #ddd;
-    padding: 15px;
-    border-radius: 5px;
-}
-.Price-Detail p{
-    display: flex;
-    justify-content: space-between;
-}
-.Price-Detail h5{
-    display: flex;
-    justify-content: space-between;
-}
-.checkout{
-    width: 100%;
-    background-color: blue;
-    color: white;
-    border-radius: 2px;
+  }
+
+  ul {
+    display: block;
+  }
+
+  img {
+    margin-left: calc(50% - 50px);
+  }
+
+  .removeToCart {
+    font-size: 4vw;
+    margin-top: 8%;
+    width: 38vw;
+    margin-left: calc(50% - 18vw);
+  }
+
+
+
+  .Summary {
+    margin-top: 10%;
+  }
 }

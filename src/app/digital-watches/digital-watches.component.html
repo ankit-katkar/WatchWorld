@@ -1,0 +1,33 @@
+<div class="container-fluid">
+    <h2 class="heading">Digital Watches.</h2>
+  <div class="row">
+      <div class="col-lg-3"></div>
+      <div class="col-lg-9">
+          <div class="row">
+              <div class="col-lg-4 col-md-6 col-sm-12 col-12" *ngFor="let item of Products">
+                <div>
+                  <div class="card">
+                    <div class="card-header">
+                      <div class="productImage">
+                        <img class="mx-auto d-block" src="{{ item.image }}" alt="" />
+                      </div>
+                    </div>
+                    <div class="card-body">
+                      <div class="productName">{{ item.name }}</div>
+                      <div class="productPrice">
+                        <p>{{ item.price | currency : "INR" }}</p>
+                      </div>
+                    </div>
+                    <div class="card-footer">
+                      <div class="productFooter">
+                        <a routerLink="/detailProduct/{{ item.id }}">View Product</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      </div>
+  </div>
+  </div>
+  

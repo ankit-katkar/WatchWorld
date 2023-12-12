@@ -1,4 +1,8 @@
 
+.container-fluid{
+    background-image: url('../../assets/watches background.jpg');
+}
+
 .card{
     width: 400px;
     margin-top: 40px;
@@ -27,3 +31,18 @@
     color: red;
     font-size: 14px;
 }
+
+.btn{
+    background-color: #000;
+    color: #fff;
+}
+
+@media only screen and (max-width: 500px) {
+    .card{
+        width: 100%;
+    }
+    .card-body {
+        padding: 5% 8%;
+      }
+}
+

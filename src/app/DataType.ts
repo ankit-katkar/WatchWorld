@@ -38,6 +38,7 @@ export interface priceSummary{
     total:number,
 }
 export interface Orders{
+    image:string,
     email:string;
     number:number;
     address:string;

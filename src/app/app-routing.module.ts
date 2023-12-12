@@ -12,6 +12,10 @@ import { UserAuthComponent } from './user-auth/user-auth.component';
 import { CartComponent } from './cart/cart.component';
 import { CheckoutPageComponent } from './checkout-page/checkout-page.component';
 import { MyOrdersComponent } from './my-orders/my-orders.component';
+import { LuxuryWatchesComponent } from './luxury-watches/luxury-watches.component';
+import { CausalWatchesComponent } from './causal-watches/causal-watches.component';
+import { SmartWatchesComponent } from './smart-watches/smart-watches.component';
+import { DigitalWatchesComponent } from './digital-watches/digital-watches.component';
 
 const routes: Routes = [
   {path:'', component:HomeComponent},
@@ -24,7 +28,11 @@ const routes: Routes = [
   {path:'user-auth', component:UserAuthComponent},
   {path:'cart', component:CartComponent},
   {path:'checkout', component:CheckoutPageComponent},
-  {path:'myorders', component:MyOrdersComponent}
+  {path:'myorders', component:MyOrdersComponent},
+  {path:'Luxury-Watches', component:LuxuryWatchesComponent},
+  {path:'causal-watches', component:CausalWatchesComponent},
+  {path:'smart-watches', component:SmartWatchesComponent},
+  {path:'digital-watches', component:DigitalWatchesComponent},
 
 ];
 

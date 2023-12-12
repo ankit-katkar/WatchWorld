@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { ProductsService } from '../services/products.service';
 import { Cart, Products } from '../DataType';
 
@@ -13,7 +13,8 @@ productData: Products | undefined;
 removeCart=false
 productQuentity:number=1;
 cartData:Products | undefined;
-  constructor(private ActiveRoute:ActivatedRoute, private product:ProductsService) { }
+  constructor(private ActiveRoute:ActivatedRoute, private product:ProductsService, 
+    private route:Router) { }
 
   ngOnInit(): void {
     let ProductDetail = this.ActiveRoute.snapshot.paramMap.get('productId');
@@ -42,10 +43,9 @@ cartData:Products | undefined;
       })
     }
 
-    })
-
-   
+    }) 
   }
+
   Quentity(val:string){
     if(this.productQuentity<20 && val==='max'){
       this.productQuentity+=1
@@ -53,8 +53,9 @@ cartData:Products | undefined;
       this.productQuentity-=1
     }
   }
+
   AddToCart(){
-    if(this.productData){
+    if(this.productData && localStorage.getItem('user')){
       this.productData.quantity = this.productQuentity;
       if(!localStorage.getItem('user')){
         this.product.localAddToCard(this.productData)
@@ -76,6 +77,8 @@ cartData:Products | undefined;
         })
         
       }
+    } else{
+      this.route.navigate(['/user-auth'])
     }
   }
   removeToCart(productId:number){

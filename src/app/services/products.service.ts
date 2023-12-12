@@ -23,10 +23,13 @@ export class ProductsService {
     return this.http.get<Products>(`http://localhost:3000/Products/${id}`)
   }
   sellerUpdateProduct(Products:Products){
-    return this.http.put(`http://localhost:3000/Products/${Products.id}`,Products)
+    return this.http.put(`http://localhost:3000/Products/${Products.id}`, Products)
   }
   trandeyProduct(){
-    return this.http.get<Products[]>(`http://localhost:3000/Products?_limit=20`)
+    return this.http.get<Products[]>(`http://localhost:3000/Products?_limit=9`)
+  }
+  simellerProduct(){
+    return this.http.get<Products[]>(`http://localhost:3000/Products?_limit=4`)
   }
   scarchProduct(query:string){
     return this.http.get<Products[]>(`http://localhost:3000/Products?q=${query}`)

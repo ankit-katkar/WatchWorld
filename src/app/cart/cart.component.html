@@ -1,17 +1,19 @@
 <div class="container">
     <div class="cart-page">
         <div class="row">
-            <div class="col-lg-8">
+            <div class="col-lg-8 col-md-12 col-sm-12 col-12">
+                <h2 class="myCart">My Cart</h2>
+
                 <div class="Product-Details">
                     <ul *ngFor="let data of cartData">
-                        <li>
+                        <li> 
                             <img src="{{data.image}}" alt="">
                         </li>
                         <li>
                             <span>{{data.name}}</span>
                         </li>
                         <li>
-                            <span>{{data.price}}</span>
+                            <span> <i class="bi bi-currency-rupee"></i>{{data.price}}</span>
                         </li>
                         <li>
                             <span>Quantity:&nbsp;{{data.quantity}}</span>
@@ -22,16 +24,16 @@
                             </button>
                         </li>
                     </ul>
-                </div>
+                </div> 
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-4 col-md-12 col-sm-12 col-12">
                 <h2 class="Summary">Summary</h2>
                 <div class="Price-Detail">
                     <p>Price <span>{{priceSummary.price}}</span></p>
                     <p>Tax <span>{{priceSummary.tax}}</span></p>
                     <p>Discount <span>{{priceSummary.discount}}</span></p>
                     <p>Delivery Charges <span>{{priceSummary.deliveryCharges}}</span></p>
-                    <h5>Total <span>{{priceSummary.total}}</span></h5>
+                    <h5>Total <span>{{priceSummary.total | currency: "INR"}}</span></h5>
                     <button class="btn checkout" (click)="checkout()">checkout</button>
                 </div>
             </div>

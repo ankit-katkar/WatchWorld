@@ -1,8 +1,13 @@
+
+.container-fluid{
+    background-image: url('../../assets/watches background.jpg');
+    overflow: hidden;
+}
 .card{
     width: 450px;
     border-radius: 3px;
-    margin-bottom: 80px;
-    margin-top: 20px;
+    margin-top: 60px;
+    margin-bottom: 60px;
 }
 .card-body{
     padding: 50px;
@@ -13,7 +18,7 @@
     padding-bottom: 20px;
 }
 .productMessage{
-    color: green;
+    color: green; 
     font-size: 16px;
 }
 .form-group{
@@ -34,4 +39,17 @@ input::-webkit-inner-spin-button {
 .InputError{
     color: red;
     font-size: 14px;
+}
+.btn{
+    background-color: #000;
+    color: #fff;
+}
+
+@media only screen and (max-width: 500px) {
+    .card{
+        width: 100%;
+    }
+    .card-body{
+        padding: 8% 5% 8% 5%;
+    }
 }
