@@ -2,6 +2,7 @@
     margin: 0%;
     padding: 5% 5% 0% 5%;
     overflow: hidden;
+    margin-top: 10vh;
    }
    
    .heading{
@@ -17,7 +18,7 @@
      
      .card-header {
        background-color: white;
-       height: 240px;
+       height: 34vh;
      }
      
      .productImage img {
@@ -53,8 +54,21 @@
        color: #fff;
      }
    
+     @media only screen and (max-width: 800px) {
+      .container-fluid{
+        margin-top: 15vh;
+      }
+     }
      
      @media only screen and (max-width: 500px) {
+      .container-fluid{
+        margin-top: 20vh;
+      }
+
+      .card-header {
+        height: 38vh;
+      }
+
      .heading{
        text-align: center;
      }

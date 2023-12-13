@@ -1,105 +1,130 @@
-.container{
-    padding: 70px 150px 70px 150px;
+.container {
+  padding: 12% 8% 5% 8%
 }
-img{
-    width: 80%;
+
+img {
+  width: 80%;
 }
-.product-head{
-    border-bottom: 1px solid rgb(218, 218, 218);
+
+.product-head {
+  border-bottom: 1px solid rgb(218, 218, 218);
 }
-.product-head h3{
-color: #000;
-font-size: 2.2vw;
-text-transform: uppercase;
+
+.product-head h3 {
+  color: #000;
+  font-size: 2.2vw;
+  text-transform: uppercase;
 }
-.price{
-    font-size: 1.6vw;
-    font-weight: 500;
+
+.price {
+  font-size: 1.6vw;
+  font-weight: 500;
 }
-.info{
-    border-bottom: 1px solid rgb(218, 218, 218); 
-    padding-top: 15px;
-    padding-bottom: 15px;
+
+.info {
+  border-bottom: 1px solid rgb(218, 218, 218);
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
-.info p{
-    font-size: 1.4vw;
+
+.info p {
+  font-size: 1.4vw;
 }
-.product-color{
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    border: 1px solid black;
+
+.product-color {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid black;
 }
-.quentity-group{
-    width: 100% auto;
+
+.quentity-group {
+  width: 100% auto;
 }
-.quentity-group input{
-    width: 60px; 
-    border: 1px solid #ddd;
-    height: 35px;
-    text-align: center;
-    border-left: none;
-    border-right: none;
+
+.quentity-group input {
+  width: 60px;
+  border: 1px solid #ddd;
+  height: 35px;
+  text-align: center;
+  border-left: none;
+  border-right: none;
 }
-.quentity-group button{
-    width: 30px; 
-    height: 35px;
-    border: 0px;
-    background-color: #000;
-    color: #fff;
+
+.quentity-group button {
+  width: 30px;
+  height: 35px;
+  border: 0px;
+  background-color: #000;
+  color: #fff;
 }
-.description{
-    font-size: 16px;
-    padding-top: 15px;
-    padding-bottom: 15px;
+
+.description {
+  font-size: 16px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
-.Footer-btn{
-    width: 12vw;
-    background-color: #000; 
-    color: white;
-    border-radius: 0px;
-    border: 2px solid white;
-    float: right;
-    border-radius: 5px;
+
+.Footer-btn {
+  width: 12vw;
+  background-color: #000;
+  color: white;
+  border-radius: 0px;
+  border: 2px solid white;
+  float: right;
+  border-radius: 5px;
 }
 
 @media only screen and (max-width: 800px) {
-    .container{
-        padding: 5% 8% 5% 8%;
-    }
-    .product-head h3{
-        font-size: 3.5vw;
-        }
-        .price{
-            font-size: 2.5vw;
-        }
-        .info p{
-            font-size: 2.6vw;
-        }
-        .Footer-btn{
-            width: 20vw;
-        }
+  .container {
+    padding: 18% 8% 5% 8%;
+  }
+
+  .product-head h3 {
+    font-size: 3.5vw;
+  }
+
+  .price {
+    font-size: 2.5vw;
+  }
+
+  .info p {
+    font-size: 2.6vw;
+  }
+
+  .Footer-btn {
+    width: 20vw;
+  }
 }
 
 @media only screen and (max-width: 500px) {
-    img{
-        width: 80%;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .product-head h3{
-        font-size: 6vw;
-        }
-        .price{
-            font-size: 4vw;
-        }
-        .info p{
-            font-size: 4.5vw;
-        }
-        .Footer-btn{
-            width: 44vw;
-            float: left;
-            margin-left: calc(50% - 22vw);
-        }
+  .container {
+    padding-top: 40%;
+  }
+
+  img {
+    width: 60%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .product-head h3 {
+    font-size: 6vw;
+    padding-top: 10%;
+  }
+
+  .price {
+    font-size: 4vw;
+  }
+
+  .info p {
+    font-size: 4.5vw;
+  }
+
+  .Footer-btn {
+    width: 44vw;
+    float: left;
+    margin-left: calc(50% - 22vw);
+  }
 }

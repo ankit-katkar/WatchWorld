@@ -1,5 +1,5 @@
 .container {
-  padding: 20px 100px 0px 100px;
+  padding: 10% 10% 5% 10%;
 }
 
 .Checkout {
@@ -29,6 +29,10 @@
   margin-left: calc(50% - 5vw);
 }
 
+.Payment-Detail{
+  margin-left: 20%;
+}
+
 .Payment-Detail p {
   font-size: 18px;
 }
@@ -41,7 +45,7 @@
 
 @media only screen and (max-width: 800px) {
     .container {
-        padding: 8% 2%;
+        padding: 18% 5% 5% 5% ;
       }
 
       .Checkout {
@@ -55,11 +59,14 @@
         width: 16vw;
         margin-left: calc(50% - 8vw);
       }
+      .Payment-Detail{
+        margin-left: 5%;
+      }
 }
 
 @media only screen and (max-width: 500px) {
     .container {
-        padding: 8% 4%;
+      padding: 36% 5% 5% 5%;
       }
 
       .Checkout {
@@ -77,5 +84,6 @@
 
       .Payment-Detail{
         padding-top: 10%;
+        margin-left: 1%;
       }
 }

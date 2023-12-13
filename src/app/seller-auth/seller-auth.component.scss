@@ -1,5 +1,6 @@
 .container-fluid {
   background-image: url('../../assets/watches background.jpg');
+  margin-top: 6%;
 }
 
 .card {
@@ -37,7 +38,21 @@
     color: #fff;
 }
 
+.ErrorMsg{
+  color: red;
+}
+
+@media only screen and (max-width: 800px) {
+  .container-fluid{
+    margin-top: 12%;
+  }
+}
+
 @media only screen and (max-width: 500px) {
+  .container-fluid{
+    margin-top: 22%;
+  }
+
     .card{
         width: 100%;
     }

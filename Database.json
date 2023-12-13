@@ -111,5 +111,14 @@
     }
   ],
   "Cart": [],
-  "MyOrders": []
+  "MyOrders": [
+    {
+      "email": "",
+      "number": "",
+      "address": "",
+      "totalPrice": 1699,
+      "userId": 1,
+      "id": 1
+    }
+  ]
 }
